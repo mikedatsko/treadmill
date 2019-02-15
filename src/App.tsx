@@ -62,7 +62,7 @@ class App extends Component {
           {/* TODO check scale */}
           {/*<div className="app-header" style={{transform: `scale(${this.state.scale})`}}>*/}
           <div className="app-header">
-            <div className="page">
+            <div className="page" style={{width: this.state.width + 'px', height: this.state.height - 43 + 'px'}}>
               <Switch>
                 <Route path="/dashboard" component={Dashboard}/>
                 <Route path="/entertainment-select" component={EntertainmentSelect}/>

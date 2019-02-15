@@ -30,8 +30,6 @@
 }
 
 .page {
-  width: 988px;
-  height: 537px;
   overflow: hidden;
 }
 
@@ -45,15 +43,19 @@
 }
 
 .videos-list {
-  width: 800px;
+  width: 80%;
   background: #eee;
   overflow: auto;
-  height: 480px;
+  height: 100%;
+  float: left;
+  display: grid;
+  grid-auto-rows: 50%;
+  grid-template-columns: 50% 50%;
 }
 
 .videos-list .video {
-  width: 400px;
-  height: 300px;
+  width: 100%;
+  height: 100%;
   border: 2px solid transparent;
   float: left;
   position: relative;
@@ -76,4 +78,8 @@
 
 .videos-list .video.video-selected {
   border-color: #f00;
+}
+
+.entertainment-view {
+  height: 100%;
 }
